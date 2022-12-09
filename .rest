@@ -1,0 +1,26 @@
+GET http://localhost:3000/coffees
+###
+//GET localhost:3000/buy/query?coffeeType=latte&amount=1
+GET http://localhost:3000/coffees/63937847247719f626006ebc
+
+###
+POST http://localhost:3000/coffees
+Content-Type: application/json
+
+{
+  "name": "Coffee",
+  "coffeeType":"Cappucino"
+}
+###
+
+
+DELETE http://localhost:3000/coffees/63936aa318309945696350da
+//We pass the id of item in the database.
+###
+PATCH  http://localhost:3000/coffee/6389dff4c765d06409483e13
+Content-Type: application/json
+
+{
+  "name": "Espresso",
+  "coffeeType": "Bitter"
+}
